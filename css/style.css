@@ -1,8 +1,12 @@
 body {
-    background: grey;
+    background: yellow;
 }
 
-#top-title {
+#top {
     text-align:center;
 }
 
+h1 {
+    text-align: center;
+    color: blue;
+}
