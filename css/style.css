@@ -2,7 +2,9 @@ body {
     background: grey;
 }
 
-#top-title {
+#top {
     text-align:center;
+    color: black;
+    font-family: ;
+    font-weight:bold;
 }
-
