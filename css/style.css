@@ -4,9 +4,7 @@ body {
 
 #top {
     text-align:center;
-}
-
-h1 {
-    text-align: center;
-    color: blue;
+    color: black;
+    font-family: ;
+    font-weight:bold;
 }
