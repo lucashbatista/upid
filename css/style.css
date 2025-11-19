@@ -1,3 +1,8 @@
-h1 {
-  text-align:center;
+body {
+    background: grey;
 }
+
+#top-title {
+    text-align:center;
+}
+
