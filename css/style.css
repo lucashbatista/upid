@@ -9,3 +9,9 @@ body {
     font-weight:bold;
   
 }
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
