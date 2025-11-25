@@ -35,16 +35,9 @@ body {
     text-decoration: none;
 }
 
-.logo-img {
-    position:relative;
-    height:400;
-    
-}
 
 .logo-img {
-    position:fixed;
     display:block;
-    margin: 1px;
     width: 150px;
     height: 100px;
     
