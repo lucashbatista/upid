@@ -53,10 +53,71 @@ body {
 
 .email-form {
     text-align:center;
+    padding-bottom: 50px;
+}
+/* Table edition */
+
+table {
+    width:70%;
+    height: 100%;
 }
 
-.price-table {
+.table-box {
     text-align:center;
-    margin-top: 40px;
-    margin-bottom:40px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 30vh;
+    width: 100vw;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
+
+th {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+
+table, th, tr {
+    border: 1px solid black; /* Sets border width, style, and color */
+    padding: 0.5em
+    
+    
+}
+
+
+/* Hero section */
+
+.hero {
+    padding: 200px;
+    object-fit: contain;
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+.hero-headline {
+    font-weight: bold;
+    font-size: 24px;
+    color: darkblue;
+    
+}
+
+.hero-sub-headline {
+    font-size: 18px;
+    color: darkblue;
+}
+
+.hero-image {
+    height: 60%;
+    width: 60%;
+    object-fit:contain;
+    justify-content: right;
+    align-items: center;
+}
+

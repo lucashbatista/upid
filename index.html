@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TEH9F911M"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6TEH9F911M');
+      </script>
         <title>Upid Identity Webpage</title>
 
         <!-- Add icon library -->
@@ -29,7 +39,7 @@
                 <nav class="mainpage">
                     <ul class="mainpage-menu">
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About us</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
 
@@ -39,22 +49,18 @@
 
 
         <!-- Hero block of the webpage -->
+
          <div class="hero">
           <div class="hero-headline">
+            <p>Identity Management for your Business. Getting the Right Accesses for your Employees</p>
 
           </div>
           <div class="hero-sub-headline">
+            <p>Implement SSO, MFA, and secure access controls with expert guidance tailored to your business.</p>
+          </div>  
+            <img alt="Man on his computer with icons around him such as graph and chat box"
+            src="src/hero-image-man-with-icons-on-background.png" class="hero-image">
 
-          </div>
-          <div class="hero-visual">
-
-          </div>
-          <div class="hero-call-to-action">
-
-          </div>
-
-
-          
          </div>  
 
         <!-- Paragraphs Showing the offered services. -->
@@ -64,10 +70,9 @@
           <p>Identity lifecycle management</p>
         </div>
 
-        
-
-          <div class="price-table"><table align="center">
-            <div class="columns">
+          <div class="table-box">
+            <table>
+            <div class="table">
               <tr>
                 <th>Tier 1</th>
                 <th>Tier 2</th>
@@ -97,6 +102,7 @@
 
           <!-- subscribe -->
           <div class="email-form">
+            <p style="font-weight: bold;">NEWSLETTER</p>
           <form action="/subscribe" method="post">
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="your@example.com" required>
