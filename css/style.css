@@ -121,3 +121,17 @@ table, th, tr {
     align-items: center;
 }
 
+/* Footer */
+
+.footer-container {
+    padding: 40px;
+    display:grid;
+    
+    
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #023E8A;
+    color: white;
+}
