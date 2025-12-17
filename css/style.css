@@ -26,6 +26,7 @@ body {
     margin: 0;
     padding: 0;
     justify-content: left;
+    font-size:24px;
     
 }
 
@@ -74,18 +75,19 @@ table {
 }
 
 th {
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: bolder;
+    font-size: 24px;
     text-align: center;
     background-color: white;
+    color:black;
+    
     
 }
 
 
 table, th, tr {
     border: 1px solid black; /* Sets border width, style, and color */
-    padding: 0.5em
-    
+    padding: 0.5em;    
     
 }
 
@@ -93,24 +95,26 @@ table, th, tr {
 /* HERO SECTION */
 
 .hero {
-    height: 100hv;
+    height:100hv;
     width: 100%;
     position: relative;
     overflow: hidden;/*clips the image to the coutainer bound*/
+    padding:5px;
+    background-color: #fff;
+   
 }
 
 .hero-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
- 
+   transform:scale(0.5);
+    bottom: 0;
+    right: 0;
+   
 }
 
 .hero-text {
     z-index:1;
     position: absolute;
-    top:35%;
+    top:15%;
     left:40%;
     text-align:left;
     transform: translate(-50%, -50%); /*Moves an element from its current position along the X and Y axes.*/
@@ -118,11 +122,22 @@ table, th, tr {
 }
 
 .hero-text p {
-    font-size: 30px;
+    
 }
 
 .hero-text {
     
+}
+
+#headline {
+    font-weight:bold;
+    color: ;
+    font-size:36px;
+}
+
+#sub-headline {
+    color: ;
+    font-size: 28px;
 }
 
 
