@@ -90,38 +90,63 @@ table, th, tr {
 }
 
 
-/* Hero section */
+/* HERO SECTION */
 
 .hero {
-    padding: 200px;
-    object-fit: contain;
-
-    justify-content: center;
-    align-content: center;
-
-}
-
-.hero-headline {
-    font-weight: bold;
-    font-size: 24px;
-    color: darkblue;
-    
-}
-
-.hero-sub-headline {
-    font-size: 18px;
-    color: darkblue;
+    height: 100hv;
+    width: 100%;
+    position: relative;
+    overflow: hidden;/*clips the image to the coutainer bound*/
 }
 
 .hero-image {
-    height: 60%;
-    width: 60%;
-    object-fit:contain;
-    justify-content: right;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ 
 }
 
-/* Footer */
+.hero-text {
+    z-index:1;
+    position: absolute;
+    top:35%;
+    left:40%;
+    text-align:left;
+    transform: translate(-50%, -50%); /*Moves an element from its current position along the X and Y axes.*/
+    color: ; 
+}
+
+.hero-text p {
+    font-size: 30px;
+}
+
+.hero-text {
+    
+}
+
+
+
+
+/* CTA Call-to-Action */
+
+.cta {
+    text-align: center;
+    font-size:24px;
+    background-color: white;
+    color: #023E8A;
+    font-weight: bold;
+    font-family: "DM Serif Text", serif
+    
+}
+
+
+
+
+
+
+
+/* FOOTER SECTION */
 
 .footer-container {
     padding: 40px;
@@ -135,3 +160,4 @@ table, th, tr {
     background-color: #023E8A;
     color: white;
 }
+
