@@ -105,28 +105,24 @@ table, th, tr {
 }
 
 .hero-image {
-   transform:scale(0.5);
-    bottom: 0;
-    right: 0;
-   
+   transform:scale(0.4);
+
+  bottom: 0;
+  right: 0;
+  /* Optional: Add a small margin to prevent the image from touching the very edge */
+  margin: 10px;
 }
 
+
 .hero-text {
+    float: left;
     z-index:1;
     position: absolute;
     top:15%;
     left:40%;
     text-align:left;
     transform: translate(-50%, -50%); /*Moves an element from its current position along the X and Y axes.*/
-    color: ; 
-}
-
-.hero-text p {
-    
-}
-
-.hero-text {
-    
+    color:  #023E8A; 
 }
 
 #headline {
