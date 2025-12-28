@@ -1,7 +1,7 @@
 body {
-    background: #fff;
-}
+    
 
+}
 #top {
     text-align:center;
     color: black;
@@ -9,6 +9,9 @@ body {
     font-weight:bold;
   
 }
+
+
+
 
 .footer-container {
     display: grid;
@@ -55,6 +58,10 @@ body {
 .email-form {
     text-align:center;
     padding-bottom: 50px;
+    padding-top:20px;
+    font-size: 20px;
+    background-color: #023E8A;
+    color: #fff;
 }
 /* Table edition */
 
@@ -79,8 +86,15 @@ th {
     font-size: 24px;
     text-align: center;
     background-color: white;
-    color:black;
-    
+    color:black;  
+}
+
+td {
+    font-size: 20px;
+    text-align: center;
+    background-color: ;
+    color: #023E8A;
+    font-weight: bold;
     
 }
 
@@ -95,48 +109,73 @@ table, th, tr {
 /* HERO SECTION */
 
 .hero {
-    height:100hv;
-    width: 100%;
-    position: relative;
-    overflow: hidden;/*clips the image to the coutainer bound*/
-    padding:5px;
-    background-color: #fff;
-   
+  position: relative;
+  min-height: 480px;
+  padding: 64px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #ffffff;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
+/* Text block (top-left) */
+.hero-content {
+  max-width: 520px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Image block (bottom-right) */
 .hero-image {
-   transform:scale(0.4);
-
+  position: absolute;
+  right: 32px;
   bottom: 0;
-  right: 0;
-  /* Optional: Add a small margin to prevent the image from touching the very edge */
-  margin: 10px;
+  max-width: 420px;
 }
 
-
-.hero-text {
-    float: left;
-    z-index:1;
-    position: absolute;
-    top:15%;
-    left:40%;
-    text-align:left;
-    transform: translate(-50%, -50%); /*Moves an element from its current position along the X and Y axes.*/
-    color:  #023E8A; 
+.hero-image img {
+  width: 100%;
+  height: auto;
 }
 
-#headline {
-    font-weight:bold;
-    color: ;
-    font-size:36px;
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 24px;
+    text-align: left;
+  }
+
+  .hero-image {
+    position: static;
+    margin-top: 32px;
+    max-width: 100%;
+  }
 }
-
-#sub-headline {
-    color: ;
-    font-size: 28px;
-}
-
-
 
 
 /* CTA Call-to-Action */
@@ -159,9 +198,13 @@ table, th, tr {
 
 /* FOOTER SECTION */
 
+
+
+
 .footer-container {
     padding: 40px;
     display:grid;
+    font-size: 20px;
     
     
 }
@@ -170,5 +213,6 @@ table, th, tr {
     text-align: center;
     background-color: #023E8A;
     color: white;
+    font-size: 20px;
 }
 
