@@ -2,6 +2,12 @@ body {
     
 
 }
+
+.value-preposition {
+    background:linear-gradient(blue,white);
+    padding: 100px;
+    font-size: 36px;
+}
 #top {
     text-align:center;
     color: black;
@@ -60,53 +66,12 @@ body {
     padding-bottom: 50px;
     padding-top:20px;
     font-size: 20px;
-    background-color: #023E8A;
+    background: linear-gradient(135deg,  #023E8A, #0077B6 );
     color: #fff;
 }
-/* Table edition */
-
-table {
-    width:70%;
-    height: 100%;
-}
-
-.table-box {
-    text-align:center;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    height: 30vh;
-    width: 100vw;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-th {
-    font-weight: bolder;
-    font-size: 24px;
-    text-align: center;
-    background-color: white;
-    color:black;  
-}
-
-td {
-    font-size: 20px;
-    text-align: center;
-    background-color: ;
-    color: #023E8A;
-    font-weight: bold;
-    
-}
 
 
-table, th, tr {
-    border: 1px solid black; /* Sets border width, style, and color */
-    padding: 0.5em;    
-    
-}
-
-
-/* HERO SECTION */
+/* ######## HERO SECTION ############ */
 
 .hero {
   position: relative;
@@ -139,7 +104,7 @@ table, th, tr {
 .hero-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #3b82f6;
+  background-color: #0077B6;
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
@@ -180,20 +145,32 @@ table, th, tr {
 
 /* CTA Call-to-Action */
 
-.cta {
-    text-align: center;
-    font-size:24px;
-    background-color: white;
-    color: #023E8A;
-    font-weight: bold;
-    font-family: "DM Serif Text", serif
-    
+.mid-page-cta {
+    padding: 50px;
 }
 
+.cta {
+    text-align; center;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    
+    
+    padding: 12px 24px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0077B6;
+    border-radius:8px;
+    font-weight: 600;
+    font-size: 18px;
+}
 
-
-
-
+.cta:hover {
+    background-color: #2563eb;
+}
 
 
 /* FOOTER SECTION */
