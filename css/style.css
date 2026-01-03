@@ -40,8 +40,9 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: left;
-    font-size:24px;
+    justify-content: center;
+    font-size:30px;
+    padding-bottom: 20px;
     
 }
 
@@ -199,3 +200,13 @@ body {
     font-size: 20px;
 }
 
+.services {
+  font-size: 24px;
+  text-align: center;
+
+}
+
+.newsletter {
+  text-align: center;
+  padding: 30px;
+}
