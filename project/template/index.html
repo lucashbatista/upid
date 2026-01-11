@@ -85,13 +85,25 @@
 
 
         <!-- Paragraphs Showing the offered services. -->
-         
         <section class="services">
+          <h2>Services</h2>
+        <div class="container">
+          <div class="box box1">
+            <h2>SSO and MFA Integration</h2>
+            <p></p>
+          </div>
+          <div class="box box2">
+            <h2>Identity Lifecycle Management</h2>
+            <p></p>
+          </div>
+        </div>
+      </section>
+       <!-- <section class="services">
 
           <h3 style="text-align: left;">Services</h3>
           <p>SSO (Single Sign-On) and MFA (Multi-Factor Authentication) integration</p>
           <p>Identity lifecycle management</p>  
-        </section>
+        </section>-->
 
 
      
@@ -106,14 +118,44 @@
         </section>
         
           <!-- subscribe -->
-           <section class="newsletter">
+          <section class="newsletter">
             <h2>Subscribe to Our Newsletter</h2>
-              <form action="/subscribe" method="POST">
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" required>
-              <button type="submit">Subscribe</button>
+        
+            <form id="newsletter-form">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Subscribe</button>
             </form>
-            </section>
+        
+            <p id="message"></p>
+        </section>
+        
+        <script>
+        document.getElementById("newsletter-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+        
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message");
+        
+            try {
+                const response = await fetch("/subscribe", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ email })
+                });
+        
+                const data = await response.json();
+                message.textContent = data.message || data.error;
+                message.style.color = response.ok ? "green" : "red";
+        
+            } catch (error) {
+                message.textContent = "Server error. Please try again.";
+                message.style.color = "red";
+            }
+        });
+        </script>
       
       
       </body>
@@ -133,8 +175,8 @@
               <div class="footer-section">
                 <h4>Services</h4>
                 <ul>
-                  <li><a href="">SSO and MFA Integration</a></li>
-                  <li><a href="">Identity Lifecycle Management</a></li>
+                  <li><a href="template/SSOandMFA.html">SSO and MFA Integration</a></li>
+                  <li><a href="template/identitylifecyclemanagement.html">Identity Lifecycle Management</a></li>
                 </ul>
               </div>
           
@@ -175,3 +217,4 @@
 
    
 </html>
+

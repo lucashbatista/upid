@@ -201,11 +201,28 @@ body {
     font-family: "EB Garamond", serif;
 }
 
-.services {
-  font-size: 16px;
-  text-align: center;
+/* Services Homepage */ 
 
+.container {
+  display: flex;
+  gap: 20px;
 }
+
+.box {
+  flex: 1; /* Makes both boxes grow equally to fill the container width */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.box1 {
+  background-color: #e0f7fa; /* Light blue color */
+}
+
+.box2 {
+  background-color:#e0f7fa; /* Light orange color */
+}
+
 
 .newsletter {
   text-align: center;
