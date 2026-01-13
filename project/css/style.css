@@ -228,3 +228,17 @@ body {
   text-align: center;
   padding: 30px;
 }
+
+
+/* ABOUT US PAGE */ 
+
+#about-page {
+  font-family:"EB Garamond", serif; 
+  color: #333;
+  background-color:;
+  margin: 50px;
+  
+}
+
+#about-page p {
+}

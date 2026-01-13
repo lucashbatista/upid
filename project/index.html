@@ -49,9 +49,9 @@
             <div class="topmenu">
                 <nav class="mainpage">
                     <ul class="mainpage-menu">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="template/services.html">Services</a></li>
+                        <li><a href="template/about.html">About us</a></li>
+                        <li><a href="template/contactus.html">Contact Us</a></li>
                     </ul>
 
                 </nav>
@@ -70,11 +70,11 @@
               Implement SSO, MFA, and secure access controls 
               with expert guidance tailored to your business.
             </p>
-            <a href="contactus.html" class="hero-btn">Schedule a Call</a>
+            <a href="template/contactus.html" class="hero-btn">Schedule a Call</a>
           </div>
         
           <div class="hero-image">
-            <img src="src/hero-image-man-with-icons-on-background.png" alt="Identity & Security Illustration">
+            <!--<img src="src/hero-image-man-with-icons-on-background.png" alt="Identity & Security Illustration">-->
           </div>
         </section>
         
@@ -113,12 +113,77 @@
         <!-- CTA -->
         <section class="mid-page-cta">
           
-            <a href="schedulecall.html" class="cta">Schedule a Call to See How Upid Simplifies Identity</a>
+            <a href="template/schedulecall.html" class="cta">Schedule a Call to See How Upid Simplifies Identity</a>
           
         </section>
         
-          <!-- subscribe -->
-          <section class="newsletter">
+          <!-- SUBSCRIBE TO NEWSLETTER -->
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newsletter Signup</title>
+ 
+</head>
+<body>
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <input type="email" id="email" placeholder="Enter your email" required />
+    <button id="subscribeBtn">Subscribe</button>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script>
+    const subscribeBtn = document.getElementById("subscribeBtn");
+    const emailInput = document.getElementById("email");
+    const messageDiv = document.getElementById("message");
+
+    subscribeBtn.addEventListener("click", async () => {
+      const email = emailInput.value.trim();
+      messageDiv.textContent = "";
+      messageDiv.className = "message";
+
+      if (!email) {
+        messageDiv.textContent = "Please enter an email.";
+        messageDiv.classList.add("error");
+        return;
+      }
+
+      try {
+        const res = await fetch("/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email })
+        });
+
+        const data = await res.json();
+
+        if (res.ok || res.status === 200) {
+          messageDiv.textContent = data.message || "Subscribed successfully!";
+          messageDiv.classList.add("success");
+          emailInput.value = "";
+        } else {
+          messageDiv.textContent = data.error || "Something went wrong.";
+          messageDiv.classList.add("error");
+        }
+
+      } catch (err) {
+        messageDiv.textContent = "Network error. Please try again.";
+        messageDiv.classList.add("error");
+        console.error("Network error:", err);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+          <!--<section class="newsletter">
             <h2>Subscribe to Our Newsletter</h2>
         
             <form id="newsletter-form">
@@ -155,7 +220,7 @@
                 message.style.color = "red";
             }
         });
-        </script>
+        </script>-->
       
       
       </body>
@@ -167,7 +232,7 @@
               <div class="footer-section">
                 <h4>Identity Consulting</h4>
                 <ul>
-                  <li><a href="about.html">About Upid Identity</a></li>
+                  <li><a href="template/about.html">About Upid Identity</a></li>
             
                 </ul>
               </div>
@@ -183,7 +248,7 @@
               <div class="footer-section">
                 <h4>Resources</h4>
                 <ul>
-                  <li><a href="blog.html">Insights & Articles</a></li>
+                  <li><a href="template/blog.html">Insights & Articles</a></li>
                   <!--<li><a href="certifications.html">Certifications</a></li>-->
             
                 </ul>
@@ -192,9 +257,9 @@
               <div class="footer-section">
                 <h4>Legal</h4>
                 <ul>
-                  <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                  <li><a href="termsofservice.html">Terms of Service</a></li>
-                  <li><a href="securityandcompliance.html">Security & Compliance</a></li>
+                  <li><a href="template/privacypolicy.html">Privacy Policy</a></li>
+                  <li><a href="template/termsofservice.html">Terms of Service</a></li>
+                  <li><a href="template/securityandcompliance.html">Security & Compliance</a></li>
                 </ul>
               </div>
           
