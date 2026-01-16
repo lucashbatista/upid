@@ -84,18 +84,17 @@
          </div>   
 
 
-        <!-- Paragraphs Showing the offered services. -->
+        <!-- SERVICES -->
         <section class="services">
-          <h2>Services</h2>
-        <div class="container">
-          <div class="box box1">
+          <div class="service-container">
+          <code>Left code<div class="sev1">
             <h2>SSO and MFA Integration</h2>
             <p></p>
-          </div>
-          <div class="box box2">
+          </div></code>
+          <code>Right code<div class="sev2">
             <h2>Identity Lifecycle Management</h2>
             <p></p>
-          </div>
+          </div></code>
         </div>
       </section>
        <!-- <section class="services">
@@ -119,65 +118,56 @@
         
           <!-- SUBSCRIBE TO NEWSLETTER -->
 
-          <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Newsletter Signup</title>
- 
-</head>
-<body>
-  <div class="container">
-    <h2>Subscribe to our Newsletter</h2>
-    <input type="email" id="email" placeholder="Enter your email" required />
-    <button id="subscribeBtn">Subscribe</button>
-    <div id="message" class="message"></div>
-  </div>
+        <section class="newsletter">
+          <div class="container">
+            <h2>Subscribe to our Newsletter</h2>
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <button id="subscribeBtn">Subscribe</button>
+            <div id="message" class="message"></div>
+          </div>
 
-  <script>
-    const subscribeBtn = document.getElementById("subscribeBtn");
-    const emailInput = document.getElementById("email");
-    const messageDiv = document.getElementById("message");
+          <script>
+            const subscribeBtn = document.getElementById("subscribeBtn");
+            const emailInput = document.getElementById("email");
+            const messageDiv = document.getElementById("message");
 
-    subscribeBtn.addEventListener("click", async () => {
-      const email = emailInput.value.trim();
-      messageDiv.textContent = "";
-      messageDiv.className = "message";
+            subscribeBtn.addEventListener("click", async () => {
+              const email = emailInput.value.trim();
+              messageDiv.textContent = "";
+              messageDiv.className = "message";
 
-      if (!email) {
-        messageDiv.textContent = "Please enter an email.";
-        messageDiv.classList.add("error");
-        return;
-      }
+              if (!email) {
+                messageDiv.textContent = "Please enter an email.";
+                messageDiv.classList.add("error");
+                return;
+              }
 
-      try {
-        const res = await fetch("/subscribe", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email })
-        });
+              try {
+                const res = await fetch("/subscribe", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email })
+                });
 
-        const data = await res.json();
+                const data = await res.json();
 
-        if (res.ok || res.status === 200) {
-          messageDiv.textContent = data.message || "Subscribed successfully!";
-          messageDiv.classList.add("success");
-          emailInput.value = "";
-        } else {
-          messageDiv.textContent = data.error || "Something went wrong.";
-          messageDiv.classList.add("error");
-        }
+                if (res.ok || res.status === 200) {
+                  messageDiv.textContent = data.message || "Subscribed successfully!";
+                  messageDiv.classList.add("success");
+                  emailInput.value = "";
+                } else {
+                  messageDiv.textContent = data.error || "Something went wrong.";
+                  messageDiv.classList.add("error");
+                }
 
-      } catch (err) {
-        messageDiv.textContent = "Network error. Please try again.";
-        messageDiv.classList.add("error");
-        console.error("Network error:", err);
-      }
-    });
-  </script>
-</body>
-</html>
-
+              } catch (err) {
+                messageDiv.textContent = "Network error. Please try again.";
+                messageDiv.classList.add("error");
+                console.error("Network error:", err);
+              }
+            });
+          </script>
+        </section>
 
 
 
