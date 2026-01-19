@@ -1,0 +1,17 @@
+body {
+    font-family: "EB Garamond", serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center; 
+}
+
+.block-1 {
+    padding: 50px;
+}
+
+.block-2 {
+    padding: 50px;
+    
+}
