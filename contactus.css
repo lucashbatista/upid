@@ -1,19 +1,13 @@
+
 body {
     font-family: "EB Garamond", serif;
     margin: 20px;
 }
 
 
-
-
-
-
-
-
-
 /* --- HEADER Section --- */
 
-.header-about {
+.header-contactus {
     background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
     padding: 70px;
@@ -21,21 +15,3 @@ body {
 }
 
 /* --- END HEADER Section --- */
-
-
-
-
-
-
-h1 {
-    text-align: center; 
-}
-
-.block-1 {
-    padding: 50px;
-}
-
-.block-2 {
-    padding: 50px;
-    
-}

@@ -219,6 +219,8 @@ body {
   justify-content: space-between; /* h2 to the edges */
   width: 100%;
   padding: 10px;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 .box {
