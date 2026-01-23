@@ -1,0 +1,23 @@
+
+.header-ssoandmfa {
+    margin: 0;
+    padding: 40px;
+    color: white;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: "EB Garamond", serif;
+}
+
+#subheader p {
+    font-weight: bold;
+    font-family: "EB Garamond", serif;
+    
+}
+
+
+p {
+    font-family: "EB Garamond", serif;
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+}

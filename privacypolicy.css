@@ -1,0 +1,11 @@
+body {
+    font-family: "EB Garamond", serif;
+    margin: 30px;
+}
+
+.header-privacy-policy {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    padding: 40px;
+    color: white;
+}
+

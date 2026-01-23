@@ -1,0 +1,15 @@
+.header-TOS {
+    padding: 50px;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+}
+
+#subheader {
+    font-weight: bold;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+
+}
