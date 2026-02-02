@@ -50,7 +50,8 @@ body {
     display:block;
     padding: 5px 10px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    color: black;
 }
 
 
@@ -183,35 +184,32 @@ body {
 
 /* FOOTER SECTION */
 
-
-
-
 .footer-container {
     padding: 40px;
     display:grid;
     font-size: 16px;      
     color: black;
     font-family: "EB Garamond", serif;
-  
-  
-    
-    
     
 }
 
 .footer-bottom {
     text-align: center;
-
     font-size: 14px;
     font-family: "EB Garamond", serif;
   
 }
 
+.footer-section {
+
+}
+
 /* START OF SERVICES BLOCK */ 
 
 .services {
-  padding: 150px;
+  padding: 130px;
   background-color: #eff4f9;
+  font-family: "EB Garamond", serif;
 }
 
 .service-container {

@@ -5,6 +5,9 @@
     background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
     padding: 70px; 
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* --- END HEADER Section --- */

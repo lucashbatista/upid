@@ -1,14 +1,10 @@
 body {
     font-family: "EB Garamond", serif;
-    margin: ;
 }
 
-.header-privacy-policy {
+.header-identitylfc {
     background: linear-gradient(135deg, #0f172a, #020617);
-    padding: 40px;
     color: white;
-    border-radius: 16px;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 50px;
 }
 
